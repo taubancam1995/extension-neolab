@@ -1,0 +1,40 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "img/favicon.jpg",
+      "default_title": "Neolab - Logtime Bitbucket"
+   },
+   "description": "Giúp Logwork Jira từ Bitbutket",
+   "manifest_version": 2,
+   "name": "Neolab Logwork",
+   "permissions": [
+      "tabs",
+      "notifications",
+      "cookies",
+      "*://*/*"
+   ],
+   "content_scripts": [
+      {
+         "matches": [
+            "*://bitbucket.org/*"
+         ],
+         "js": [
+            "js/jquery.min.js",
+            "content.js"
+         ],
+         "css": [
+            "css/main.css"
+         ],
+         "run_at": "document_end",
+         "all_frames": false
+      }
+   ],
+   "web_accessible_resources": [
+      "*"
+   ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.0"
+}

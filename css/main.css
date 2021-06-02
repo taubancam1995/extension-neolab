@@ -1,0 +1,49 @@
+.neo-logtime-form {
+  margin: 10px 0;
+  background-color: #eee;
+  padding: 15px;
+}
+
+.neo-logtime-form h2 {
+  margin-bottom: 15px;
+}
+
+.neo-logtime-form label {
+  font-weight: bold;
+  display: block;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.neo-logtime-form input, .neo-logtime-form textarea {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+}
+
+.neo-logtime-form input {
+  width: 50px;
+}
+
+.neo-logtime-form textarea {
+  width: 300px;
+  height: 100px;
+}
+
+.neo-logtime-form button {
+  background-color: #35b37e;
+  color: white;
+  border: 0;
+  padding: 6px 12px;
+  font-size: 1em;
+  margin-left: 4px;
+  border-radius: 6px;
+  transition: all .4s ease;
+  cursor: pointer;
+  display: block;
+  padding: 8px 20px;
+}
+
+.neo-logtime-form button:hover {
+  background-color: #298f65;
+}
